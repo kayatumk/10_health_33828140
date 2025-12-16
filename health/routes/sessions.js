@@ -61,7 +61,7 @@ router.get('/sessions/new', requireLogin, async (req, res) => {
   const [workouts] = await db.query(
     'SELECT id, title FROM workouts ORDER BY created_at DESC'
   );
-  res.render('session_form', { workouts });
+  res.render('sessions_form', { workouts });
 });
 
 router.post('/sessions', requireLogin, async (req, res) => {
