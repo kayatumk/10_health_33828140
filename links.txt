@@ -1,1 +1,8 @@
 home = http://www.doc.gold.ac.uk/usr/397/
+about = http://www.doc.gold.ac.uk/usr/397/about
+login = http://www.doc.gold.ac.uk/usr/397/login
+register = http://www.doc.gold.ac.uk/usr/397/register
+workouts = http://www.doc.gold.ac.uk/usr/397/workouts
+add workout = http://www.doc.gold.ac.uk/usr/397/workouts/new
+my sessions = http://www.doc.gold.ac.uk/usr/397/sessions
+log session = http://www.doc.gold.ac.uk/usr/397/sessions/new
