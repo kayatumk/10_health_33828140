@@ -1,0 +1,23 @@
+<%- include('layout', { body: `
+  <h2>Log a Workout Session</h2>
+  <form method="POST" action="/sessions">
+    <label>Workout</label>
+    <select name="workout_id" required>
+      ${workouts.map(w => `
+        <option value="${w.id}">${w.title}</option>
+      `).join('')}
+    </select>
+
+    <label>Date</label>
+    <input type="date" name="session_date" required>
+
+    <label>Duration (minutes)</label>
+    <input type="number" name="duration_minutes" min="0">
+
+    <label>Notes</label>
+    <textarea name="notes"></textarea>
+
+    <button type="submit">Save Session</button>
+  </form>
+  <p>Exercises from the chosen workout (with their sets & reps) will be stored with this session automatically.</p>
+` }) %>

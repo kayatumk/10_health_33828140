@@ -1,0 +1,28 @@
+<%- include('layout', { body: `
+  <h2>${workout.title}</h2>
+  <p><em>${workout.difficulty}</em> · by ${workout.username}</p>
+  <p>${workout.description || ''}</p>
+
+  <h3>Exercises</h3>
+  ${exercises.length === 0 ? `
+    <p>No exercises added yet.</p>
+  ` : `
+    <table>
+      <tr>
+        <th>Name</th><th>Sets</th><th>Reps</th>
+      </tr>
+      ${exercises.map(e => `
+        <tr>
+          <td>${e.name}</td>
+          <td>${e.sets}</td>
+          <td>${e.reps}</td>
+        </tr>
+      `).join('')}
+    </table>
+  `}
+
+  
+  <p>
+    <a href="/workouts/${workout.id}/exercises/new">Add Exercise</a>
+  </p>
+` }) %>

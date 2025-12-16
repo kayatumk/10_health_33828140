@@ -1,0 +1,27 @@
+<%- include('layout', { body: `
+  <section>
+    <form method="GET" action="/">
+      <input type="text" name="search" placeholder="Search workouts or users"
+             value="${search || ''}">
+      <button type="submit">Search</button>
+    </form>
+
+    <h2>All Workouts</h2>
+
+    ${workouts.length === 0 ? `
+      <p>No workouts found.</p>
+    ` : `
+      <ul>
+        ${workouts.map(w => `
+          <li>
+            <a href="/workouts/${w.id}">
+              <strong>${w.title}</strong>
+            </a>
+            (<em>${w.difficulty}</em>) by ${w.username}<br>
+            ${w.description || ''}
+          </li>
+        `).join('')}
+      </ul>
+    `}
+  </section>
+` }) %>

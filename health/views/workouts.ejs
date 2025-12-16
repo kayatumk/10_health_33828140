@@ -1,0 +1,15 @@
+<%- include('layout', { body: `
+  <h2>All Workouts</h2>
+  <ul>
+    ${workouts.map(w => `
+      <li>
+        <a href="/workouts/${w.id}">
+          <strong>${w.title}</strong>
+        </a>
+        by ${w.username}
+        (<em>${w.difficulty}</em>)<br>
+        ${w.description || ''}
+      </li>
+    `).join('')}
+  </ul>
+` }) %>

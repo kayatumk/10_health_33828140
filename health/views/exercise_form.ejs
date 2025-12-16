@@ -1,0 +1,19 @@
+<%- include('layout', { body: `
+  <h2>Add Exercise to "${workout.title}"</h2>
+  ${error ? `<p class="error">${error}</p>` : ''}
+
+  <form method="POST" action="/workouts/${workout.id}/exercises">
+    <label>Exercise name</label>
+    <input type="text" name="name" required>
+
+    <label>Sets</label>
+    <input type="number" min="1" name="sets" required>
+
+    <label>Reps per set</label>
+    <input type="number" min="1" name="reps" required>
+
+    <button type="submit">Add Exercise</button>
+  </form>
+
+  <p><a href="/workouts/${workout.id}">Back to workout</a></p>
+` }) %>

@@ -1,0 +1,19 @@
+<%- include('layout', { body: `
+  <h2>Add a Workout</h2>
+  <form method="POST" action="/workouts">
+    <label>Title</label>
+    <input type="text" name="title" required>
+
+    <label>Description</label>
+    <textarea name="description"></textarea>
+
+    <label>Difficulty</label>
+    <select name="difficulty">
+      <option>Easy</option>
+      <option selected>Medium</option>
+      <option>Hard</option>
+    </select>
+
+    <button type="submit">Save Workout</button>
+  </form>
+` }) %>
