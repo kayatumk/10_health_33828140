@@ -1,11 +1,5 @@
-Outline: This workout app allows users to both register and login to their account and post their workouts for every user to see. Once they have completed their workout, they can post what they have done so that other users can see and use their workout. It makes you describe your workout, how many sets you have done, how many reps, and the duration of the workout. Once you have filled out all the information you can post it so that other users can see and use your workout in the gym to help them. This is done because a lot of the time in the gym, I struggle to find new workouts to do so using this, I can use other people’s workouts.
+The loaded login and password is:
+username: gold
+password: smiths
 
-Architecture:
-
-Data model:
-
-Functionality:
-
-Advanced Techniques:
-
-AI declaration: In this project, I have used AI to help me understand the errors were being shown and helping me fix these errors. I have a tutor to help me with coding as it has been something I have struggled with in the past, so the code was mainly done by me, but my tutor helped in making the layout of the programming better.
+The documentation is shown in the attached file called Report.
